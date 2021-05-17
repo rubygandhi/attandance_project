@@ -48,16 +48,15 @@ class _AttendanceState extends State<Attendance> {
                 children: [
                   Column(
                     children: [
-
-                      Text("Start Date"),
-                      Text('25/05/21'),
+                      "Start Date".text.make().box.make(),
+                      '25/05/21'.text.make().box.make(),
                     ],
                   ),
                   Column(
                     children: [
 
-                      Text('End Date'),
-                      Text('21/05/21'),
+                      'End Date'.text.make().box.make(),
+                      '21/05/21'.text.make().box.make(),
                     ],
                   ),
                   Column(
@@ -80,7 +79,7 @@ class _AttendanceState extends State<Attendance> {
 
             ),
           ),
-          HeightBox(0),
+          HeightBox(10),
           Card(
 
 
