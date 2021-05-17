@@ -21,7 +21,7 @@ class _AttendanceState extends State<Attendance> {
       ),
 
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.orangeAccent,
         onPressed: () {
 
           Navigator.pushReplacement(
@@ -63,7 +63,7 @@ class _AttendanceState extends State<Attendance> {
                   Column(
                     children: [
 
-                      "Search".text.center.make().box.alignCenter.roundedLg.color(Vx.orange400).height(30).width(100).make(),
+                      "Search".text.center.make().box.alignCenter.roundedLg.color(Colors.orangeAccent).height(30).width(100).make(),
                     ],
                   ),
                 ],
@@ -91,22 +91,22 @@ class _AttendanceState extends State<Attendance> {
                 children: [
                    Row(
                     children: [
-                      "Check in".text.align(TextAlign.center).make().box.height(25).width(150).make(),
-                      "15:06".text.align(TextAlign.center).make().box.height(25).width(120).gray300.make(),
+                      "Check in".text.align(TextAlign.center).make().box.height(context.screenHeight*0.03).width(context.screenWidth*0.14).make(),
+                      "15:06".text.align(TextAlign.center).make().box.height(context.screenHeight*0.03).width(context.screenWidth*0.14).gray300.make(),
 
 
                       Row(
                         children: [
 
-                          "Check out".text.align(TextAlign.center).make().box.height(25).width(150).make(),
-                          "15:06".text.align(TextAlign.center).make().box.height(25).width(120).gray300.make(),
+                          "Check out".text.align(TextAlign.center).make().box.height(context.screenHeight*0.03).width(context.screenWidth*0.14).make(),
+                          "15:06".text.align(TextAlign.center).make().box.height(context.screenHeight*0.03).width(context.screenWidth*0.14).gray300.make(),
 
                         ],
                       ),
                       Row(
                         children: [
-                          "Total time".text.align(TextAlign.center).make().box.height(25).width(150).make(),
-                          "15:06".text.align(TextAlign.center).make().box.height(25).width(120).gray300.make(),
+                          "Total time".text.align(TextAlign.center).make().box.height(context.screenHeight*0.03).width(context.screenWidth*0.14).make(),
+                          "15:06".text.align(TextAlign.center).make().box.height(context.screenHeight*0.03).width(context.screenWidth*0.14).gray300.make(),
 
                         ],
                       ),
@@ -136,8 +136,8 @@ class _AttendanceState extends State<Attendance> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                "Pune".text.color(Vx.orange400).make(),
-                "Pune".text.color(Vx.orange400).make(),
+                "Pune".text.color(Colors.orangeAccent).make(),
+                "Pune".text.color(Colors.orangeAccent).make(),
 
               ],
             ),
